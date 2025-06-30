@@ -1,0 +1,62 @@
+{
+  "name": "hutouch-ai",
+  "displayName": "HuTouch AI",
+  "description": "Supportive IDE extension for Hutouch AI winform.",
+  "version": "1.10.6",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "publisher": "KshitijGavhane",
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kshitij-gavhane/hutouch-ai"
+  },
+  "icon": "images/icon.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "hutouch.activate",
+        "title": "Activate HuTouch"
+      },
+      {
+        "command": "hutouch.createProjectContext",
+        "title": "HuTouch: Create Project Context"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "file-type": "^19.0.0",
+    "mime":"^4.0.3",
+    "openai": "^4.47.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "extension.js",
+    "images",
+    "README.md",
+    "package.json"
+  ]
+}

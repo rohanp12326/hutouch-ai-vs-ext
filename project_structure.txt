@@ -1,0 +1,19 @@
+├── .env
+├── .eslintrc.json
+├── .vscode-test.mjs
+├── .vscodeignore
+├── backup_extension.js
+├── beforenewextension.js
+├── CHANGELOG.md
+├── extension.js
+├── hutouch-ai-0.0.1.vsix
+├── hutouch-ai-1.10.1.vsix
+├── hutouch-ai-1.10.2.vsix
+├── hutouch-ai-1.10.3.vsix
+├── hutouch-ai-1.10.4.vsix
+├── images/
+├── jsconfig.json
+├── package.json
+├── test/
+│   └── extension.test.js
+└── vsc-extension-quickstart.md
