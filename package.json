@@ -1,22 +1,22 @@
 {
-  "name": "hutouch-ai",
-  "displayName": "HuTouch AI",
-  "description": "Supportive IDE extension for Hutouch AI winform.",
-  "version": "1.10.6",
+  "name": "hutouch-ai-coding",
+  "displayName": "HuTouch AI Code",
+  "description": "Supportive IDE extension for Hutouch AI.",
+  "version": "2.10.2",
   "engines": {
     "vscode": "^1.89.0"
   },
   "categories": [
     "Other"
   ],
-  "publisher": "KshitijGavhane",
+  "publisher": "NiitiLLC",
   "activationEvents": [
     "*"
   ],
   "main": "./extension.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kshitij-gavhane/hutouch-ai"
+    "url": "https://github.com/rohanp12326/hutouch-ai-vs-ext"
   },
   "icon": "images/icon.png",
   "contributes": {
@@ -26,22 +26,36 @@
         "title": "Activate HuTouch"
       },
       {
-        "command": "hutouch.createProjectContext",
-        "title": "HuTouch: Create Project Context"
+        "command": "extension.setupStructure",
+        "title": "Setup Project Structure"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "HuTouch AI",
+      "properties": {
+        "hutouch.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "HuTouch API key used for sending logs and telemetry from the extension."
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "vscode:uninstall": "node ./scripts/uninstall.js"
   },
   "dependencies": {
+    "axios": "^1.9.0",
     "chokidar": "^3.6.0",
+    "diff": "^7.0.0",
+    "diff-match-patch": "^1.0.5",
     "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "file-type": "^19.0.0",
-    "mime":"^4.0.3",
+    "mime": "^4.0.3",
     "openai": "^4.47.2"
   },
   "devDependencies": {
@@ -52,11 +66,5 @@
     "@vscode/test-electron": "^2.3.9",
     "eslint": "^8.57.0",
     "typescript": "^5.4.5"
-  },
-  "files": [
-    "extension.js",
-    "images",
-    "README.md",
-    "package.json"
-  ]
+  }
 }
