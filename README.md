@@ -40,17 +40,17 @@ No additional configuration is required. The extension is designed to work out-o
 
 ## Contribution
 
-Contributions are welcome! If you have any ideas, suggestions, or issues, please feel free to open an issue or [Mail developer](gavhanekshitij8@gmail.com).
+Contributions are welcome! If you have any ideas, suggestions, or issues, please feel free to open an issue or [Mail developer](hutouchniiti@gmail.com).
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/vovidapl-php) file for details.
 
 ## Author
-Kshitij Gavhane\
+NIITI
 Full Stack Developer
 ##### Niiti LLC
 
 ---
 
-For more information, visit the [HuTouch AI GitHub repository](https://github.com/kshitij-gavhane/hutouch-ai).
+For more information, visit the [HuTouch AI GitHub repository](https://github.com/rohanp12326/hutouch-ai-vs-ext).
