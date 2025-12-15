@@ -1,13 +1,20 @@
 {
   "name": "hutouch-ai-coding",
-  "displayName": "HuTouch AI Code",
-  "description": "Supportive IDE extension for Hutouch AI.",
-  "version": "2.10.2",
+  "displayName": "HuTouch - Production Grade Flutter AI code for UI, API, Business logic in mins",
+  "description": "Flutter AI code generator for VS Code that uses tried & tested community or your preferred coding standards to produce production-grade code that users say is 10x better than Cursor/Copilot.",
+  "version": "2.10.22",
   "engines": {
     "vscode": "^1.89.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "flutter",
+    "dart",
+    "flutter ai code",
+    "code generator",
+    "clean architecture"
   ],
   "publisher": "NiitiLLC",
   "activationEvents": [
@@ -29,17 +36,7 @@
         "command": "extension.setupStructure",
         "title": "Setup Project Structure"
       }
-    ],
-    "configuration": {
-      "title": "HuTouch AI",
-      "properties": {
-        "hutouch.apiKey": {
-          "type": "string",
-          "default": "",
-          "description": "HuTouch API key used for sending logs and telemetry from the extension."
-        }
-      }
-    }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
